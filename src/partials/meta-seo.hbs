@@ -1,0 +1,80 @@
+<!-- Primary Meta Tags -->
+<title>{{#if page.title}}{{page.title}} | {{siteName}}{{else}}{{siteName}} - {{tagline}}{{/if}}</title>
+<meta name="title" content="{{#if page.title}}{{page.title}} | {{siteName}}{{else}}{{siteName}} - {{tagline}}{{/if}}">
+<meta name="description" content="{{#if page.description}}{{page.description}}{{else}}{{description}}{{/if}}">
+<meta name="keywords" content="{{#if page.keywords}}{{page.keywords}}{{else}}grokipedia, wikipedia, comparison, encyclopedia analysis, independent review, AI encyclopedia, grokipedia vs wikipedia{{/if}}">
+<meta name="author" content="Grokipedia Wiki Team">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{url}}{{#if page.path}}{{page.path}}{{else}}/{{/if}}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{url}}{{#if page.path}}{{page.path}}{{else}}/{{/if}}">
+<meta property="og:title" content="{{#if page.title}}{{page.title}} | {{siteName}}{{else}}{{siteName}} - {{tagline}}{{/if}}">
+<meta property="og:description" content="{{#if page.description}}{{page.description}}{{else}}{{description}}{{/if}}">
+<meta property="og:image" content="{{url}}{{#if page.image}}{{page.image}}{{else}}/assets/images/og-image.svg{{/if}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="{{siteName}}">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{url}}{{#if page.path}}{{page.path}}{{else}}/{{/if}}">
+<meta name="twitter:title" content="{{#if page.title}}{{page.title}} | {{siteName}}{{else}}{{siteName}} - {{tagline}}{{/if}}">
+<meta name="twitter:description" content="{{#if page.description}}{{page.description}}{{else}}{{description}}{{/if}}">
+<meta name="twitter:image" content="{{url}}{{#if page.image}}{{page.image}}{{else}}/assets/images/og-image.svg{{/if}}">
+<meta name="twitter:image:alt" content="{{siteName}} - Independent Encyclopedia Analysis">
+{{#if social.twitter}}
+<meta name="twitter:site" content="@grokipediawiki">
+<meta name="twitter:creator" content="@grokipediawiki">
+{{/if}}
+
+<!-- Additional Meta Tags -->
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{siteName}}",
+  "alternateName": "Grokipedia Wiki - Encyclopedia Comparison Platform",
+  "url": "{{url}}",
+  "description": "{{description}}",
+  "inLanguage": "en-US",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{url}}/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{siteName}}",
+    "url": "{{url}}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{url}}{{logo}}",
+      "width": 100,
+      "height": 100
+    },
+    "sameAs": [
+      "{{social.twitter}}",
+      "{{social.github}}"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "url": "{{url}}/about/#contact",
+      "availableLanguage": ["English"]
+    }
+  }
+}
+</script>

@@ -1,0 +1,25 @@
+# robots.txt for Grokipedia Wiki
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://grokipediawiki.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin/temp directories (if any)
+Disallow: /admin/
+Disallow: /.tmp/
+Disallow: /temp/
+
+# Allow all bots to index the main content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

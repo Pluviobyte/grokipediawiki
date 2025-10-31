@@ -1,0 +1,45 @@
+{
+  "name": "grokipediawiki",
+  "version": "1.0.0",
+  "description": "Grokipedia vs Wikipedia - Independent Analysis Platform",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:handlebars": "nodemon --watch src --ext hbs,json --exec \"node build.js\"",
+    "dev:tailwind": "tailwindcss -i ./src/assets/css/input.css -o ./dist/assets/css/styles.css --watch",
+    "dev:server": "live-server dist --port=3000 --wait=100",
+    "build": "npm-run-all build:clean build:handlebars build:tailwind build:assets build:optimize",
+    "build:clean": "rimraf dist",
+    "build:handlebars": "node build.js",
+    "build:tailwind": "tailwindcss -i ./src/assets/css/input.css -o ./dist/assets/css/styles.css --minify",
+    "build:assets": "node scripts/copy-assets.js",
+    "build:optimize": "node scripts/optimize.js"
+  },
+  "keywords": [
+    "grokipedia",
+    "wikipedia",
+    "static-site",
+    "seo"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
+    "handlebars": "^4.7.8",
+    "html-minifier-terser": "^7.2.0",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.1.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.49",
+    "rimraf": "^6.0.1",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.16",
+    "tailwindcss-animate": "^1.0.7",
+    "terser": "^5.36.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
+}

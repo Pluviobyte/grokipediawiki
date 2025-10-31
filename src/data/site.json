@@ -1,0 +1,23 @@
+{
+  "title": "Grokipedia Wiki",
+  "siteName": "Grokipedia Wiki",
+  "description": "Independent third-party analysis platform providing in-depth, objective comparisons between Grokipedia and Wikipedia.",
+  "url": "https://grokipediawiki.com",
+  "logo": "/assets/images/logo.svg",
+  "tagline": "The Unofficial PediaWiki Showdown",
+  "nav": [
+    { "label": "Groki Pedia", "href": "/grokipedia/" },
+    { "label": "News Center", "href": "/news/" },
+    { "label": "Deep Analysis", "href": "/analysis/" },
+    { "label": "AI Toolbox", "href": "/tools/" },
+    { "label": "About Us", "href": "/about/" }
+  ],
+  "social": {
+    "twitter": "https://twitter.com/grokipediawiki",
+    "github": "https://github.com/grokipediawiki"
+  },
+  "analytics": {
+    "enabled": true,
+    "googleAnalyticsId": "G-XXXXXXXXXX"
+  }
+}

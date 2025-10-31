@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grokipedia - The AI-driven Encyclopedia</title>
+    <!-- Favicon Added - Source updated to local path -->
+    <link rel="icon" type="image/svg+xml" href="/asset/grok.svg">
+    <!-- SEO Meta Tags for indexing -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="World's most comprehensive knowledge base, borned with rich multi-modal sources, powered by Grok.">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111111;
+            color: #ffffff; /* White text for high contrast */
+            scroll-behavior: smooth;
+        }
+
+        /* Custom styles for the timeline line */
+        .timeline-line {
+            width: 4px;
+            background-color: #555555; /* Subtle dark gray line */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+
+            /* Default (Mobile): Move to the far left of the timeline container */
+            left: 0;
+            transform: translateX(0);
+        }
+
+        /* Adjust line position for larger screens (md and up) to be centered */
+        @media (min-width: 768px) {
+            .timeline-line {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Timeline dot base styling */
+        .timeline-dot {
+            position: absolute;
+            width: 1.5rem; /* w-6 */
+            height: 1.5rem; /* h-6 */
+            background-color: #ffffff; /* White dot */
+            border-radius: 9999px; /* rounded-full */
+            border: 4px solid #111111; /* Border matches new body BG */
+            z-index: 10;
+            top: 0;
+
+            /* Default (Mobile): Align dot to the left line */
+            left: 0;
+            transform: translateX(-50%); /* Half of the dot width to center it on the line */
+        }
+
+        /* Timeline Item content container spacing for mobile */
+        .timeline-content-wrapper {
+            padding-left: 2rem; /* Ensure content clears the line/dot on mobile */
+            text-align: left;
+            width: 100%; /* Use full width on mobile */
+        }
+
+        /* Specific dot positioning and content adjustments for alternating desktop layout */
+        @media (min-width: 768px) {
+            .timeline-content-wrapper {
+                width: calc(50% - 2rem); /* Take up half the screen minus margin from center line */
+            }
+
+            /* Items on the left side (odd child) */
+            .timeline-item:nth-child(odd) .timeline-dot {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .timeline-item:nth-child(odd) .timeline-content-wrapper {
+                text-align: right;
+                padding-right: 2rem; /* Space from center line */
+                padding-left: 0;
+            }
+
+            /* Items on the right side (even child) */
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .timeline-item:nth-child(even) .timeline-content-wrapper {
+                text-align: left;
+                padding-left: 2rem; /* Space from center line */
+                padding-right: 0;
+                margin-left: 50%; /* Push content to the right side of the center line */
+            }
+        }
+
+        /* CSS to ensure the embedded blockquote respects the dark theme */
+        blockquote.twitter-tweet {
+            margin: 0 auto; /* Center the blockquote */
+        }
+
+        /* Custom class for the scrolling effect (New) */
+        .scrolled-nav {
+            background-color: rgba(17, 17, 17, 0.95); /* #111111 with 95% opacity */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid #222;
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+<!-- Fixed Navigation Bar -->
+    <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Top Left: Grokipedia Logo and Text (Adjusted size for mobile) -->
+            <a href="https://grokipedia.page" class="flex items-center space-x-2 text-xl sm:text-2xl font-extrabold text-white">
+                <img src="/asset/grok.svg" alt="Grok Logo" class="h-6 w-6">
+                <span>Grokipedia</span>
+            </a>
+
+            <!-- Top Right: Menu Links (Made visible on mobile, reduced size and spacing) -->
+            <div class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-lg font-medium">
+                <a href="https://grokipedia.page" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                <a href="https://grokipedia.page/nine-theses" class="text-cyan-400 hover:text-cyan-300 transition-colors">Theses</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section (Adjusted padding to clear the fixed nav) -->
+    <header class="pt-24 pb-16 px-4 sm:px-6 lg:px-8 text-center bg-transparent border-b border-gray-800">
+        <h1 class="text-5xl sm:text-7xl font-extrabold text-white mb-4 flex items-center justify-center space-x-4">
+            <!-- Grok Logo Added - Source updated to local path -->
+            <img src="/asset/grok.svg" alt="Grok Logo" class="h-12 w-12 sm:h-16 sm:w-16">
+            <span>Grokipedia</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-400 max-w-3xl mx-auto">
+            An AI-Powered, Open-Source Knowledge Repository, Vastly Better Than Wikipedia.
+        </p>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Elon Musk Tweet Embed -->
+        <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-6 text-white">The Announcement</h2>
+            <!-- Official Twitter Embed -->
+            <blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">We are building Grokipedia <a href="https://twitter.com/xai?ref_src=twsrc%5Etfw">@xAI</a>. <br><br>Will be a massive improvement over Wikipedia.<br><br>Frankly, it is a necessary step towards the xAI goal of understanding the Universe. <a href="https://t.co/xvSeWkpALy">https://t.co/xvSeWkpALy</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1972992095859433671?ref_src=twsrc%5Etfw">September 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <!-- CTA Button - Link updated to external URL -->
+            <div class="text-center mt-12">
+                <a href="#" target="_blank" class="inline-block px-12 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-cyan-400/70 transition duration-300 transform hover:scale-105">
+                    Join the Movement
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Timeline Section -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Grokipedia Timeline</h2>
+
+            <!-- Timeline Container: max-w-5xl ensures content doesn't get too wide -->
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Vertical Timeline Line (Custom CSS) -->
+                <div class="timeline-line"></div>
+
+                <div class="space-y-16 pt-10 pb-10">
+
+                    <!-- Timeline Item 1: Ideation (UPDATED) -->
+                    <div class="timeline-item relative flex flex-col md:flex-row md:items-center">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper">
+                            <h3 class="text-2xl font-semibold text-white mb-1">Grokipedia Idea Proposed</h3>
+                            <p class="text-gray-400">Elon Musk first revealed the intention to create Grokipedia during
+                                <a href="https://www.youtube.com/watch?v=qeZqZBRA-6Q&t=1694s" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition-colors">ALL-IN SUMMIT 2025
+                                </a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: Early Development -->
+                    <div class="timeline-item relative flex flex-col md:flex-row md:items-center">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper">
+                            <h3 class="text-2xl font-semibold text-white mb-1">Early Development Phase</h3>
+                            <p class="text-gray-400">September 10, 2025 - Initial development work began on the Grokipedia platform, focusing on AI-powered knowledge curation and verification systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: X Announcement (Updated) -->
+                    <div class="timeline-item relative flex flex-col md:flex-row md:items-center">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper">
+                            <h3 class="text-2xl font-semibold text-white mb-1">Official X Post by Elon Musk</h3>
+                            <p class="text-gray-400">September 30, 2025 -
+                            <a href="https://x.com/i/trending/1973243064400400552" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition-colors">Elon Musk posted: <i>"We are building Grokipedia @xAI. Will be a massive improvement over Wikipedia."</i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: Token Graduated (Updated) -->
+                    <div class="timeline-item relative flex flex-col md:flex-row md:items-center">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper">
+                            <h3 class="text-2xl font-semibold text-white mb-1">Token Graduation/Public Interest</h3>
+                            <p class="text-gray-400">September 30, 2025 - The Grokipedia token garnered significant public interest.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5: Community Building (Updated) -->
+                    <div class="timeline-item relative flex flex-col md:flex-row md:items-center">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content-wrapper">
+                            <h3 class="text-2xl font-semibold text-white mb-1">Community Building Initiative</h3>
+                            <p class="text-gray-400">September 30, 2025 - <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                                Grokipedia X Community
+                            </a> was formally established on the X platform.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 6: Development On The Way (Updated) -->
+                    <div class="timeline-item relative flex flex-col md:flex-row md:items-center">
+                        <!-- Highlight current item with a clean blue dot, as white on white is hard to distinguish -->
+                        <div class="timeline-dot bg-blue-500"></div>
+                        <div class="timeline-content-wrapper">
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-1">Elon Musk's Call to Join</h3>
+                            <p class="text-gray-400">Elon Musk issued a public appeal or invitation for people to join the Grokipedia initiative with xAi.
+                                <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition-colors">Apply to join!
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Anchor for CTA -->
+            <div id="contribute-form" class="pt-20"></div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-transparent mt-12">
+        <div class="text-center text-gray-500">
+            &copy; 2025
+            <!-- Link added to Grokipedia Community text -->
+            <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                Grokipedia Community
+            </a>
+            . All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // --- Navigation Scroll Logic (New) ---
+        function handleScroll() {
+            const nav = document.getElementById('main-nav');
+            // Check if the vertical scroll position is more than 50 pixels
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled-nav');
+            } else {
+                nav.classList.remove('scrolled-nav');
+            }
+        }
+
+        // Attach the function to the scroll event
+        window.addEventListener('scroll', handleScroll);
+
+        // Run on page load to check initial position (in case page is loaded scrolled)
+        window.onload = function() {
+            handleScroll();
+        };
+
+    </script>
+
+</body>
+</html>

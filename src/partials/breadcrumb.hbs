@@ -1,0 +1,30 @@
+{{#if page.breadcrumbs}}
+<nav aria-label="Breadcrumb" class="container py-4">
+  <ol class="flex items-center gap-2 text-sm text-muted-foreground" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="/" class="hover:text-primary transition-colors">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+
+    {{#each page.breadcrumbs}}
+    <li class="flex items-center gap-2">
+      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        {{#if this.url}}
+        <a itemprop="item" href="{{this.url}}" class="hover:text-primary transition-colors">
+          <span itemprop="name">{{this.label}}</span>
+        </a>
+        {{else}}
+        <span itemprop="name" class="text-foreground font-medium">{{this.label}}</span>
+        {{/if}}
+        <meta itemprop="position" content="{{@index}}" />
+      </span>
+    </li>
+    {{/each}}
+  </ol>
+</nav>
+{{/if}}

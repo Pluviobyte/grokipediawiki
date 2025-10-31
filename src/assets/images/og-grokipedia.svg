@@ -1,0 +1,41 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0F172A"/>
+
+  <!-- Ambient Gradient Circles -->
+  <circle cx="220" cy="140" r="280" fill="#6366F1" opacity="0.10"/>
+  <circle cx="980" cy="520" r="420" fill="#6366F1" opacity="0.08"/>
+
+  <!-- Framing Card -->
+  <rect x="100" y="150" width="1000" height="330" rx="20" fill="#1E293B" opacity="0.85"/>
+
+  <!-- Logo Mark -->
+  <circle cx="300" cy="315" r="80" fill="#6366F1" opacity="0.2"/>
+  <text x="300" y="345" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif" font-size="60" font-weight="bold" fill="#6366F1" text-anchor="middle">GW</text>
+
+  <!-- Title -->
+  <text x="450" y="270" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif" font-size="56" font-weight="800" fill="#F8FAFC">
+    Groki Pedia — Overview
+  </text>
+
+  <!-- Subtitle -->
+  <text x="450" y="330" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif" font-size="32" fill="#94A3B8">
+    AI‑assisted encyclopedia snapshot
+  </text>
+
+  <!-- Tagline -->
+  <text x="450" y="390" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif" font-size="28" font-weight="600" fill="#6366F1">
+    Clean hero • Media • Tables • Lists
+  </text>
+
+  <!-- Bottom Info -->
+  <text x="450" y="445" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif" font-size="20" fill="#CBD5E1">
+    Structured for discovery and sharing
+  </text>
+
+  <!-- URL -->
+  <text x="600" y="570" font-family="system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif" font-size="24" fill="#64748B" text-anchor="middle">
+    grokipediawiki.com/grokipedia/
+  </text>
+</svg>
+
