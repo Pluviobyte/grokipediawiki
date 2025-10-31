@@ -13,9 +13,9 @@
 
 {{> breadcrumb}}
 
-<section class="section pt-24">
+<section class="section pt-3" style="margin-top:-75px;">
   <div class="container">
-    <div class="mx-auto max-w-3xl text-center mb-16">
+    <div class="mx-auto max-w-3xl text-center mb-4">
       <h1 class="heading-1 mb-6">Deep Analysis</h1>
       <p class="text-lg text-muted-foreground">
         Comprehensive comparisons of controversial and significant encyclopedia entries
@@ -24,159 +24,206 @@
 
     {{> ad-banner size="970x90 Billboard"}}
 
-    <!-- Analysis Grid -->
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Analysis List -->
+    <div class="mx-auto max-w-5xl">
+      <div class="space-y-4">
 
-      <!-- Article 1: Launch Controversy -->
-      <article class="card overflow-hidden hover:shadow-lg transition-shadow">
-        <div class="aspect-video bg-gradient-to-br from-red-500/20 to-orange-500/10 flex items-center justify-center">
-          <svg class="h-16 w-16 text-red-500/40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-          </svg>
-        </div>
-        <div class="p-6">
-          <div class="mb-3 flex items-center gap-2 text-xs text-muted-foreground">
-            <span class="px-2 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 font-medium">Platform Analysis</span>
-            <span>•</span>
-            <time>Oct 29, 2025</time>
-            <span>•</span>
-            <span>12 min read</span>
-          </div>
-          <h3 class="heading-3 mb-2 line-clamp-2">
-            The Grokipedia Launch: Controversy & Immediate Criticism
-          </h3>
-          <p class="text-sm text-muted-foreground mb-4 line-clamp-3">
-            Comprehensive analysis of Grokipedia's October 2025 launch, examining the immediate controversies, critical reception, platform delays, and what the launch reveals about AI encyclopedia viability.
-          </p>
-          <a href="/analysis/launch-controversy.html" class="link text-sm font-medium inline-flex items-center gap-1">
-            Read full analysis
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+        <!-- Article 1: Launch Controversy -->
+        <article class="group">
+          <a href="/analysis/launch-controversy.html" class="card block p-6 hover:shadow-md transition-all border-l-4 border-l-red-500">
+            <div class="flex flex-col md:flex-row md:items-center gap-4">
+              <!-- Icon & Category -->
+              <div class="flex items-center gap-4 md:w-48 flex-shrink-0">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-red-500/10 text-red-500 flex-shrink-0">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 font-medium text-xs whitespace-nowrap">Platform Analysis</span>
+              </div>
+
+              <!-- Content -->
+              <div class="flex-1 min-w-0">
+                <h3 class="heading-3 mb-2 group-hover:text-primary transition-colors">
+                  The Grokipedia Launch: Controversy & Immediate Criticism
+                </h3>
+                <p class="text-sm text-muted-foreground mb-3 line-clamp-2">
+                  Comprehensive analysis of Grokipedia's October 2025 launch, examining the immediate controversies, critical reception, platform delays, and what the launch reveals about AI encyclopedia viability.
+                </p>
+                <div class="flex items-center gap-3 text-xs text-muted-foreground">
+                  <time>Oct 29, 2025</time>
+                  <span>•</span>
+                  <span>12 min read</span>
+                </div>
+              </div>
+
+              <!-- Arrow -->
+              <div class="hidden md:flex items-center text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all">
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
           </a>
-        </div>
-      </article>
+        </article>
 
-      <!-- Article 2: Bias & Accuracy -->
-      <article class="card overflow-hidden hover:shadow-lg transition-shadow">
-        <div class="aspect-video bg-gradient-to-br from-yellow-500/20 to-orange-500/10 flex items-center justify-center">
-          <svg class="h-16 w-16 text-yellow-500/40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-          </svg>
-        </div>
-        <div class="p-6">
-          <div class="mb-3 flex items-center gap-2 text-xs text-muted-foreground">
-            <span class="px-2 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 font-medium">Accuracy Analysis</span>
-            <span>•</span>
-            <time>Oct 28, 2025</time>
-            <span>•</span>
-            <span>15 min read</span>
-          </div>
-          <h3 class="heading-3 mb-2 line-clamp-2">
-            Bias & Accuracy Analysis: The Battle for Neutrality
-          </h3>
-          <p class="text-sm text-muted-foreground mb-4 line-clamp-3">
-            Both platforms face allegations of ideological bias in opposite directions. Examining the evidence, exploring root causes, and evaluating accuracy concerns including AI hallucinations and human error.
-          </p>
-          <a href="/analysis/bias-accuracy.html" class="link text-sm font-medium inline-flex items-center gap-1">
-            Read full analysis
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+        <!-- Article 2: Bias & Accuracy -->
+        <article class="group">
+          <a href="/analysis/bias-accuracy.html" class="card block p-6 hover:shadow-md transition-all border-l-4 border-l-yellow-500">
+            <div class="flex flex-col md:flex-row md:items-center gap-4">
+              <!-- Icon & Category -->
+              <div class="flex items-center gap-4 md:w-48 flex-shrink-0">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-500/10 text-yellow-500 flex-shrink-0">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  </svg>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 font-medium text-xs whitespace-nowrap">Accuracy Analysis</span>
+              </div>
+
+              <!-- Content -->
+              <div class="flex-1 min-w-0">
+                <h3 class="heading-3 mb-2 group-hover:text-primary transition-colors">
+                  Bias & Accuracy Analysis: The Battle for Neutrality
+                </h3>
+                <p class="text-sm text-muted-foreground mb-3 line-clamp-2">
+                  Both platforms face allegations of ideological bias in opposite directions. Examining the evidence, exploring root causes, and evaluating accuracy concerns including AI hallucinations and human error.
+                </p>
+                <div class="flex items-center gap-3 text-xs text-muted-foreground">
+                  <time>Oct 28, 2025</time>
+                  <span>•</span>
+                  <span>15 min read</span>
+                </div>
+              </div>
+
+              <!-- Arrow -->
+              <div class="hidden md:flex items-center text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all">
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
           </a>
-        </div>
-      </article>
+        </article>
 
-      <!-- Article 3: Editorial Transparency -->
-      <article class="card overflow-hidden hover:shadow-lg transition-shadow">
-        <div class="aspect-video bg-gradient-to-br from-blue-500/20 to-indigo-500/10 flex items-center justify-center">
-          <svg class="h-16 w-16 text-blue-500/40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-          </svg>
-        </div>
-        <div class="p-6">
-          <div class="mb-3 flex items-center gap-2 text-xs text-muted-foreground">
-            <span class="px-2 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-medium">Editorial Analysis</span>
-            <span>•</span>
-            <time>Oct 28, 2025</time>
-            <span>•</span>
-            <span>12 min read</span>
-          </div>
-          <h3 class="heading-3 mb-2 line-clamp-2">
-            Editorial Process & Transparency: A Critical Comparison
-          </h3>
-          <p class="text-sm text-muted-foreground mb-4 line-clamp-3">
-            Deep analysis comparing editorial processes and transparency standards. Examining how each platform maintains content quality and accountability through fundamentally different approaches.
-          </p>
-          <a href="/analysis/editorial-transparency.html" class="link text-sm font-medium inline-flex items-center gap-1">
-            Read full analysis
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+        <!-- Article 3: Editorial Transparency -->
+        <article class="group">
+          <a href="/analysis/editorial-transparency.html" class="card block p-6 hover:shadow-md transition-all border-l-4 border-l-blue-500">
+            <div class="flex flex-col md:flex-row md:items-center gap-4">
+              <!-- Icon & Category -->
+              <div class="flex items-center gap-4 md:w-48 flex-shrink-0">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-500 flex-shrink-0">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-medium text-xs whitespace-nowrap">Editorial Analysis</span>
+              </div>
+
+              <!-- Content -->
+              <div class="flex-1 min-w-0">
+                <h3 class="heading-3 mb-2 group-hover:text-primary transition-colors">
+                  Editorial Process & Transparency: A Critical Comparison
+                </h3>
+                <p class="text-sm text-muted-foreground mb-3 line-clamp-2">
+                  Deep analysis comparing editorial processes and transparency standards. Examining how each platform maintains content quality and accountability through fundamentally different approaches.
+                </p>
+                <div class="flex items-center gap-3 text-xs text-muted-foreground">
+                  <time>Oct 28, 2025</time>
+                  <span>•</span>
+                  <span>12 min read</span>
+                </div>
+              </div>
+
+              <!-- Arrow -->
+              <div class="hidden md:flex items-center text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all">
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
           </a>
-        </div>
-      </article>
+        </article>
 
-      <!-- Article 4: Community Governance -->
-      <article class="card overflow-hidden hover:shadow-lg transition-shadow">
-        <div class="aspect-video bg-gradient-to-br from-green-500/20 to-emerald-500/10 flex items-center justify-center">
-          <svg class="h-16 w-16 text-green-500/40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-          </svg>
-        </div>
-        <div class="p-6">
-          <div class="mb-3 flex items-center gap-2 text-xs text-muted-foreground">
-            <span class="px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 font-medium">Governance Analysis</span>
-            <span>•</span>
-            <time>Oct 29, 2025</time>
-            <span>•</span>
-            <span>10 min read</span>
-          </div>
-          <h3 class="heading-3 mb-2 line-clamp-2">
-            Community Governance: Open Collaboration vs Centralized Control
-          </h3>
-          <p class="text-sm text-muted-foreground mb-4 line-clamp-3">
-            Analyzing fundamental differences between Wikipedia's democratic community model and Grokipedia's centralized AI-driven approach to content creation and management.
-          </p>
-          <a href="/analysis/community-governance.html" class="link text-sm font-medium inline-flex items-center gap-1">
-            Read full analysis
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+        <!-- Article 4: Community Governance -->
+        <article class="group">
+          <a href="/analysis/community-governance.html" class="card block p-6 hover:shadow-md transition-all border-l-4 border-l-green-500">
+            <div class="flex flex-col md:flex-row md:items-center gap-4">
+              <!-- Icon & Category -->
+              <div class="flex items-center gap-4 md:w-48 flex-shrink-0">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-green-500/10 text-green-500 flex-shrink-0">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 font-medium text-xs whitespace-nowrap">Governance Analysis</span>
+              </div>
+
+              <!-- Content -->
+              <div class="flex-1 min-w-0">
+                <h3 class="heading-3 mb-2 group-hover:text-primary transition-colors">
+                  Community Governance: Open Collaboration vs Centralized Control
+                </h3>
+                <p class="text-sm text-muted-foreground mb-3 line-clamp-2">
+                  Analyzing fundamental differences between Wikipedia's democratic community model and Grokipedia's centralized AI-driven approach to content creation and management.
+                </p>
+                <div class="flex items-center gap-3 text-xs text-muted-foreground">
+                  <time>Oct 29, 2025</time>
+                  <span>•</span>
+                  <span>10 min read</span>
+                </div>
+              </div>
+
+              <!-- Arrow -->
+              <div class="hidden md:flex items-center text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all">
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
           </a>
-        </div>
-      </article>
+        </article>
 
-      <!-- Article 5: AI vs Human Content -->
-      <article class="card overflow-hidden hover:shadow-lg transition-shadow">
-        <div class="aspect-video bg-gradient-to-br from-purple-500/20 to-pink-500/10 flex items-center justify-center">
-          <svg class="h-16 w-16 text-purple-500/40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-          </svg>
-        </div>
-        <div class="p-6">
-          <div class="mb-3 flex items-center gap-2 text-xs text-muted-foreground">
-            <span class="px-2 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 font-medium">Technology Analysis</span>
-            <span>•</span>
-            <time>Oct 29, 2025</time>
-            <span>•</span>
-            <span>14 min read</span>
-          </div>
-          <h3 class="heading-3 mb-2 line-clamp-2">
-            AI-Generated vs Human-Curated Content: A Comprehensive Comparison
-          </h3>
-          <p class="text-sm text-muted-foreground mb-4 line-clamp-3">
-            Examining fundamental differences between Grokipedia's AI-generated encyclopedia entries and Wikipedia's human-written articles, analyzing quality, reliability, and scalability trade-offs.
-          </p>
-          <a href="/analysis/ai-vs-human-content.html" class="link text-sm font-medium inline-flex items-center gap-1">
-            Read full analysis
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+        <!-- Article 5: AI vs Human Content -->
+        <article class="group">
+          <a href="/analysis/ai-vs-human-content.html" class="card block p-6 hover:shadow-md transition-all border-l-4 border-l-purple-500">
+            <div class="flex flex-col md:flex-row md:items-center gap-4">
+              <!-- Icon & Category -->
+              <div class="flex items-center gap-4 md:w-48 flex-shrink-0">
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-purple-500/10 text-purple-500 flex-shrink-0">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 font-medium text-xs whitespace-nowrap">Technology Analysis</span>
+              </div>
+
+              <!-- Content -->
+              <div class="flex-1 min-w-0">
+                <h3 class="heading-3 mb-2 group-hover:text-primary transition-colors">
+                  AI-Generated vs Human-Curated Content: A Comprehensive Comparison
+                </h3>
+                <p class="text-sm text-muted-foreground mb-3 line-clamp-2">
+                  Examining fundamental differences between Grokipedia's AI-generated encyclopedia entries and Wikipedia's human-written articles, analyzing quality, reliability, and scalability trade-offs.
+                </p>
+                <div class="flex items-center gap-3 text-xs text-muted-foreground">
+                  <time>Oct 29, 2025</time>
+                  <span>•</span>
+                  <span>14 min read</span>
+                </div>
+              </div>
+
+              <!-- Arrow -->
+              <div class="hidden md:flex items-center text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all">
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
           </a>
-        </div>
-      </article>
+        </article>
 
+      </div>
     </div>
   </div>
 </section>
