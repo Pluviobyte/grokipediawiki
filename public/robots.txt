@@ -4,7 +4,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.grokipediawiki.com/sitemap.xml
+Sitemap: https://grokipediawiki.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

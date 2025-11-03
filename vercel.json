@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.grokipediawiki.com"
+        }
+      ],
+      "destination": "https://grokipediawiki.com/$1",
+      "permanent": true
+    }
+  ]
+}
