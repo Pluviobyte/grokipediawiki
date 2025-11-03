@@ -95,6 +95,18 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://grokipediawiki.com/news/wikipedia-founder-responds.html</loc>
+    <lastmod>2025-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/news/grokipedia-governance-model.html</loc>
+    <lastmod>2025-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Analysis Articles (High Priority Content) -->
   <url>
