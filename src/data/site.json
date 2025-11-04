@@ -6,7 +6,16 @@
   "logo": "/assets/images/logo.svg",
   "tagline": "The Unofficial PediaWiki Showdown",
   "nav": [
-    { "label": "Groki Pedia", "href": "/grokipedia/" },
+    {
+      "label": "Groki Pedia",
+      "href": "/grokipedia/",
+      "dropdown": [
+        { "label": "Official Website", "href": "/grokipedia/official-website/" },
+        { "label": "vs Wikipedia", "href": "/grokipedia/comparison-guide/" },
+        { "label": "xAI Technology", "href": "/grokipedia/xai-integration/" },
+        { "label": "Mobile & Apps", "href": "/grokipedia/mobile-access/" }
+      ]
+    },
     { "label": "News Center", "href": "/news/" },
     { "label": "Deep Analysis", "href": "/analysis/" },
     { "label": "AI Toolbox", "href": "/tools/" },
