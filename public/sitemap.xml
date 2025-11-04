@@ -11,7 +11,7 @@
   <!-- Main Sections -->
   <url>
     <loc>https://grokipediawiki.com/analysis/</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://grokipediawiki.com/grokipedia/</loc>
-    <lastmod>2025-10-31</lastmod>
+    <lastmod>2025-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -40,69 +40,95 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Grokipedia SEO Pages (High Priority) -->
+  <url>
+    <loc>https://grokipediawiki.com/grokipedia/official-website/</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/grokipedia/comparison-guide/</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/grokipedia/xai-integration/</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/grokipedia/mobile-access/</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- News Articles -->
   <url>
-    <loc>https://grokipediawiki.com/news/ai-vs-human-curation.html</loc>
+    <loc>https://grokipediawiki.com/news/ai-vs-human-curation/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/ai-encyclopedia-trends.html</loc>
+    <loc>https://grokipediawiki.com/news/ai-encyclopedia-trends/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/wikipedia-25th-anniversary.html</loc>
+    <loc>https://grokipediawiki.com/news/wikipedia-25th-anniversary/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/wikipedia-ai-strategy.html</loc>
+    <loc>https://grokipediawiki.com/news/wikipedia-ai-strategy/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/spanish-wikipedia-milestone.html</loc>
+    <loc>https://grokipediawiki.com/news/spanish-wikipedia-milestone/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/no-user-editing.html</loc>
+    <loc>https://grokipediawiki.com/news/no-user-editing/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/wikipedia-content-dependency.html</loc>
+    <loc>https://grokipediawiki.com/news/wikipedia-content-dependency/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/ai-accuracy-concerns.html</loc>
+    <loc>https://grokipediawiki.com/news/ai-accuracy-concerns/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/ai-encyclopedia-launch-crash.html</loc>
+    <loc>https://grokipediawiki.com/news/ai-encyclopedia-launch-crash/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/wikipedia-founder-responds.html</loc>
+    <loc>https://grokipediawiki.com/news/wikipedia-founder-responds/</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/news/grokipedia-governance-model.html</loc>
+    <loc>https://grokipediawiki.com/news/grokipedia-governance-model/</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -110,33 +136,53 @@
 
   <!-- Analysis Articles (High Priority Content) -->
   <url>
-    <loc>https://grokipediawiki.com/analysis/launch-controversy.html</loc>
+    <loc>https://grokipediawiki.com/analysis/launch-controversy/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/analysis/bias-accuracy.html</loc>
+    <loc>https://grokipediawiki.com/analysis/bias-accuracy/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/analysis/editorial-transparency.html</loc>
+    <loc>https://grokipediawiki.com/analysis/editorial-transparency/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/analysis/community-governance.html</loc>
+    <loc>https://grokipediawiki.com/analysis/community-governance/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/analysis/ai-vs-human-content.html</loc>
+    <loc>https://grokipediawiki.com/analysis/ai-vs-human-content/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Featured Analysis Articles (Top Priority) -->
+  <url>
+    <loc>https://grokipediawiki.com/analysis/wales-cnbc-exclusive.html</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/analysis/plagiarism-scandal-investigation.html</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/analysis/wikipedia-official-response.html</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
 </urlset>
