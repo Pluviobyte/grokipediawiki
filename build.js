@@ -93,7 +93,16 @@ function compilePage(pagePath, globalData) {
 
   // Determine output path
   const relativePath = path.relative(PAGES_DIR, pagePath);
-  const outputPath = path.join(DIST_DIR, relativePath.replace(/\.hbs$/, '.html'));
+  let outputPath = path.join(DIST_DIR, relativePath.replace(/\.hbs$/, '.html'));
+
+  // For non-index pages, create directory-based structure (e.g., page.html → page/index.html)
+  // This allows URLs like /page/ to work instead of /page.html
+  const fileName = path.basename(outputPath);
+  if (fileName !== 'index.html') {
+    const dirName = fileName.replace(/\.html$/, '');
+    const parentDir = path.dirname(outputPath);
+    outputPath = path.join(parentDir, dirName, 'index.html');
+  }
 
   // Ensure output directory exists
   fs.ensureDirSync(path.dirname(outputPath));
