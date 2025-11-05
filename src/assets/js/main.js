@@ -186,24 +186,30 @@
         }
       });
 
-      // Counter animations
+      // Counter animations - trigger on page load
       const counters = document.querySelectorAll('[data-count]');
       counters.forEach(counter => {
-        const target = parseInt(counter.dataset.count);
+        const target = parseInt(counter.dataset.count, 10);
 
-        gsap.from(counter, {
-          scrollTrigger: {
-            trigger: counter,
-            start: 'top 80%',
-            toggleActions: 'play none none none'
-          },
-          innerText: 0,
-          duration: 2,
-          snap: { innerText: 1 },
-          onUpdate: function() {
-            counter.innerText = Math.ceil(counter.innerText) + '+';
+        // Start from 0, will animate to target
+        counter.textContent = '0+';
+
+        gsap.fromTo(counter,
+          { innerText: 0 },
+          {
+            innerText: target,
+            duration: 2,
+            delay: 0.5, // Delay after page load for dramatic effect
+            snap: { innerText: 1 },
+            onUpdate: function() {
+              const current = Math.ceil(parseFloat(counter.innerText));
+              counter.innerText = `${current}+`;
+            },
+            onComplete: function() {
+              counter.innerText = `${target}+`;
+            }
           }
-        });
+        );
       });
     }
   };
