@@ -121,6 +121,30 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://grokipediawiki.com/news/grokipedia-data-privacy-concerns/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/news/academic-institutions-respond-to-grokipedia/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/news/grokipedia-global-expansion-strategy/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/news/larry-sanger-criticizes-grokipedia/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Analysis Articles (High Priority Content) -->
   <url>
@@ -150,6 +174,44 @@
   <url>
     <loc>https://grokipediawiki.com/analysis/ai-vs-human-content/</loc>
     <lastmod>2025-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/analysis/real-time-updates-challenge-ai-encyclopedias/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/analysis/grokipedia-business-model-analysis/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Additional Analysis Articles -->
+  <url>
+    <loc>https://grokipediawiki.com/analysis/382-article-comparison-study/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/analysis/academic-experts-slam-grokipedia/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/analysis/grokipedia-plagiarism-scandal/</loc>
+    <lastmod>2025-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://grokipediawiki.com/analysis/grokipedia-ai-system-analysis/</loc>
+    <lastmod>2025-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
