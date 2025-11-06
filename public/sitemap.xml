@@ -121,18 +121,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://grokipediawiki.com/news/wikipedia-founder-responds/</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://grokipediawiki.com/news/grokipedia-governance-model/</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Analysis Articles (High Priority Content) -->
   <url>
@@ -168,19 +156,19 @@
 
   <!-- Featured Analysis Articles (Top Priority) -->
   <url>
-    <loc>https://grokipediawiki.com/analysis/wales-cnbc-exclusive.html</loc>
+    <loc>https://grokipediawiki.com/analysis/wales-cnbc-exclusive/</loc>
     <lastmod>2025-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/analysis/plagiarism-scandal-investigation.html</loc>
+    <loc>https://grokipediawiki.com/analysis/plagiarism-scandal-investigation/</loc>
     <lastmod>2025-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://grokipediawiki.com/analysis/wikipedia-official-response.html</loc>
+    <loc>https://grokipediawiki.com/analysis/wikipedia-official-response/</loc>
     <lastmod>2025-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>

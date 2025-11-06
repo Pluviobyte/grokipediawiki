@@ -34,6 +34,10 @@ Handlebars.registerHelper('times', function(n, block) {
   return result;
 });
 
+Handlebars.registerHelper('add', function(a, b) {
+  return a + b;
+});
+
 // Register all partials
 function registerPartials() {
   const partialsPattern = path.join(PARTIALS_DIR, '**', '*.hbs').replace(/\\/g, '/');
@@ -112,6 +116,29 @@ function compilePage(pagePath, globalData) {
   console.log(`✓ Built: ${relativePath} → ${path.relative(DIST_DIR, outputPath)}`);
 }
 
+// Copy HTML files (non-template files)
+function copyHtmlFiles() {
+  const htmlPattern = path.join(PAGES_DIR, '**', '*.html').replace(/\\/g, '/');
+  const htmlFiles = glob.sync(htmlPattern);
+
+  htmlFiles.forEach(file => {
+    const relativePath = path.relative(PAGES_DIR, file);
+    const fileName = path.basename(file);
+    const dirName = fileName.replace(/\.html$/, '');
+    const parentDir = path.dirname(path.join(DIST_DIR, relativePath));
+    const outputPath = path.join(parentDir, dirName, 'index.html');
+
+    // Ensure output directory exists
+    fs.ensureDirSync(path.dirname(outputPath));
+
+    // Copy file
+    fs.copyFileSync(file, outputPath);
+    console.log(`✓ Copied: ${relativePath} → ${path.relative(DIST_DIR, outputPath)}`);
+  });
+
+  return htmlFiles.length;
+}
+
 // Build all pages
 async function build() {
   console.log('\n🚀 Building static site...\n');
@@ -139,7 +166,11 @@ async function build() {
     console.log('📄 Building pages:\n');
     pageFiles.forEach(file => compilePage(file, globalData));
 
-    console.log(`\n✅ Build complete! Generated ${pageFiles.length} page(s)\n`);
+    // Copy HTML files
+    console.log('\n📄 Copying HTML files:\n');
+    const htmlCount = copyHtmlFiles();
+
+    console.log(`\n✅ Build complete! Generated ${pageFiles.length} page(s) and copied ${htmlCount} HTML file(s)\n`);
   } catch (error) {
     console.error('\n❌ Build failed:', error.message);
     console.error(error.stack);

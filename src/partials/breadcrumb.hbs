@@ -19,9 +19,11 @@
           <span itemprop="name">{{this.label}}</span>
         </a>
         {{else}}
-        <span itemprop="name" class="text-foreground font-medium">{{this.label}}</span>
+        <span itemprop="item">
+          <span itemprop="name" class="text-foreground font-medium">{{this.label}}</span>
+        </span>
         {{/if}}
-        <meta itemprop="position" content="{{@index}}" />
+        <meta itemprop="position" content="{{add @index 2}}" />
       </span>
     </li>
     {{/each}}
