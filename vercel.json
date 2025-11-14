@@ -1,0 +1,53 @@
+{
+  "redirects": [
+    {
+      "source": "/analysis/wales-cnbc-exclusive.html",
+      "destination": "/analysis/wales-cnbc-exclusive/",
+      "permanent": true
+    },
+    {
+      "source": "/analysis/plagiarism-scandal-investigation.html",
+      "destination": "/analysis/plagiarism-scandal-investigation/",
+      "permanent": true
+    },
+    {
+      "source": "/analysis/wikipedia-official-response.html",
+      "destination": "/analysis/wikipedia-official-response/",
+      "permanent": true
+    },
+    {
+      "source": "/analysis/:path*.html",
+      "destination": "/analysis/:path*/",
+      "permanent": true
+    },
+    {
+      "source": "/news/:path*.html",
+      "destination": "/news/:path*/",
+      "permanent": true
+    },
+    {
+      "source": "/grokipedia/:path*.html",
+      "destination": "/grokipedia/:path*/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}

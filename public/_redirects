@@ -1,0 +1,44 @@
+# Netlify/Vercel redirect rules
+# Redirect .html URLs to directory format (trailing slash)
+
+# Analysis pages
+/analysis/wales-cnbc-exclusive.html                    /analysis/wales-cnbc-exclusive/                    301
+/analysis/plagiarism-scandal-investigation.html        /analysis/plagiarism-scandal-investigation/        301
+/analysis/wikipedia-official-response.html             /analysis/wikipedia-official-response/             301
+/analysis/ai-vs-human-content.html                     /analysis/ai-vs-human-content/                     301
+/analysis/bias-accuracy.html                           /analysis/bias-accuracy/                           301
+/analysis/community-governance.html                    /analysis/community-governance/                    301
+/analysis/editorial-transparency.html                  /analysis/editorial-transparency/                  301
+/analysis/launch-controversy.html                      /analysis/launch-controversy/                      301
+/analysis/grokipedia-business-model-analysis.html      /analysis/grokipedia-business-model-analysis/      301
+/analysis/real-time-updates-challenge-ai-encyclopedias.html /analysis/real-time-updates-challenge-ai-encyclopedias/ 301
+/analysis/grokipedia-plagiarism-scandal.html           /analysis/grokipedia-plagiarism-scandal/           301
+/analysis/grokipedia-ai-system-analysis.html           /analysis/grokipedia-ai-system-analysis/           301
+/analysis/academic-experts-slam-grokipedia.html        /analysis/academic-experts-slam-grokipedia/        301
+/analysis/382-article-comparison-study.html            /analysis/382-article-comparison-study/            301
+
+# News pages
+/news/ai-encyclopedia-launch-crash.html                /news/ai-encyclopedia-launch-crash/                301
+/news/ai-accuracy-concerns.html                        /news/ai-accuracy-concerns/                        301
+/news/wikipedia-content-dependency.html                /news/wikipedia-content-dependency/                301
+/news/no-user-editing.html                             /news/no-user-editing/                             301
+/news/spanish-wikipedia-milestone.html                 /news/spanish-wikipedia-milestone/                 301
+/news/wikipedia-ai-strategy.html                       /news/wikipedia-ai-strategy/                       301
+/news/wikipedia-25th-anniversary.html                  /news/wikipedia-25th-anniversary/                  301
+/news/ai-encyclopedia-trends.html                      /news/ai-encyclopedia-trends/                      301
+/news/ai-vs-human-curation.html                        /news/ai-vs-human-curation/                        301
+/news/grokipedia-data-privacy-concerns.html            /news/grokipedia-data-privacy-concerns/            301
+/news/academic-institutions-respond-to-grokipedia.html /news/academic-institutions-respond-to-grokipedia/ 301
+/news/grokipedia-global-expansion-strategy.html        /news/grokipedia-global-expansion-strategy/        301
+/news/larry-sanger-criticizes-grokipedia.html          /news/larry-sanger-criticizes-grokipedia/          301
+
+# Grokipedia pages
+/grokipedia/official-website.html                      /grokipedia/official-website/                      301
+/grokipedia/comparison-guide.html                      /grokipedia/comparison-guide/                      301
+/grokipedia/xai-integration.html                       /grokipedia/xai-integration/                       301
+/grokipedia/mobile-access.html                         /grokipedia/mobile-access/                         301
+
+# Generic wildcard rules (fallback)
+/analysis/*.html                                       /analysis/:splat/                                  301
+/news/*.html                                           /news/:splat/                                      301
+/grokipedia/*.html                                     /grokipedia/:splat/                                301
